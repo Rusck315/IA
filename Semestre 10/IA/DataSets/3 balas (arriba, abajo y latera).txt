@@ -1,0 +1,20 @@
+posibles acciones del personaje:			||||||||Etiquetas
+-saltar 							S		
+-moverse a la derecha y regresar al punto inicial		MD
+-moverse a la izquierda y regresar al punto inicial		MI
+
+variables:
+bala 1 (horizontal): velocidad variable
+bala 2 (esquina): velocidad variable
+bala 3 (vertical):velocidad fija (gravedad)
+
+
+escenarios :
+ninguna bala esta cerca del personaje: 	S(0) MD(0) MI(0)
+Bala horiozontal cerca:			S(1) MD(0) MI(0)
+bala vertical cerca:			S(0) MD(1) MI(0) || S(0) MD(0) MI(1)
+bala de la esquina cerca		S(0) MD(1) MI(0) || S(1) MD(0) MI(0)
+balas horizontal y vertical cerca	S(1) MD(1) MI(0) || S(0) MD(1) MI(1)
+balas horizontal y de la esquina cerca	S(1) MD(0) MI(1) || S(1) MD(1) MI(0) 
+balas vertical y de la esquina cerca	S(0) MD(1) MI(0) || 
+las tres balas cerca			S(1) MD(0) MI(1) 
