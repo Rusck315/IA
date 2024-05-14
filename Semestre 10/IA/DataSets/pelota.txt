@@ -1,0 +1,14 @@
+posibles acciones del personaje:			||||||||Etiquetas
+-saltar 							up		
+-moverse a la derecha						right
+-moverse a la izquierda						left
+-moverse hacia abajo						down
+
+
+variables: 
+x1 ------ velocidad de bala: semialeatoria, teniendo valor maximo y valor minimo disponible
+x2 ------ dirección de la bala: pequeña varianza para evitar que se trabe en los extremos
+x3 ------ distancia a la derecha del personaje a la bala
+x4 ------ distancia a la izquierda del personaje a la bala
+x5 ------ distancia arriba del personaje a la bala
+x6 ------ distancia abajo del personaje a la bala
